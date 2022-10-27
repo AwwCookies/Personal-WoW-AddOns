@@ -22,6 +22,12 @@ TargetInRangeSettings = defaultSettings
 
 -- actual addon code
 f:SetScript("OnUpdate", function()
+    -- if unit isn't attackable return early
+    if (not UnitCanAttack("player", "target")) then
+        TIRString:Hide()
+        return
+    end
+
     -- unit targeted
     if (UnitExists("target") and TargetInRangeSettings.enabled) then
         -- get nameplate of target
