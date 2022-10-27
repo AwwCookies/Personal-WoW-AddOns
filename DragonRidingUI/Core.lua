@@ -1,3 +1,4 @@
+---@diagnostic disable: undefined-global, missing-parameter
 local f = CreateFrame("Frame")
 
 -- all action bars in game minus main bar
@@ -31,7 +32,7 @@ local function isDragonRiding()
 
    local _isDragonRiding = false
    local searchText = "This is a dragonriding mount"
-   
+
    AuraUtil.ForEachAura("player", "HELPFUL", nil, function(...)
       local spellId = select(10, ...) -- get spellID
       local spell = Spell:CreateFromSpellID(spellId)

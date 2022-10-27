@@ -1,0 +1,7 @@
+## Interface: 100002
+## Version: 1.0.0
+## Title: Aww's Bug Fixes
+## Notes: Personal Bug Fixes
+## Author: Aww
+
+Core.lua
