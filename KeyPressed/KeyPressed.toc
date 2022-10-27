@@ -1,0 +1,7 @@
+## Interface: 100002
+## Version: 1.0.0
+## Title: KeyPressed
+## Notes: Personal Addon for Aww that adds arrow icon to an action bar when a modifer is pressed
+## Author: Aww
+
+KeyPressed.lua

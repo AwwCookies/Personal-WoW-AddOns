@@ -1,0 +1,8 @@
+## Interface: 100002
+## Version: 1.0.0
+## Title: Target In Range
+## Notes: Tells you if target is in range
+## Author: Aww
+## SavedVariables: TargetInRangeSettings
+
+TargetInRange.lua

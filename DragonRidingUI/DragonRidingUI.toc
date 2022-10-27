@@ -1,0 +1,7 @@
+## Interface: 100002
+## Version: 1.0.0
+## Title: Dragon Riding UI
+## Notes: My UI for Dragon Riding
+## Author: Aww
+
+Core.lua
