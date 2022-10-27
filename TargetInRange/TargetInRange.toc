@@ -5,4 +5,4 @@
 ## Author: Aww
 ## SavedVariables: TargetInRangeSettings
 
-TargetInRange.lua
+Core.lua
