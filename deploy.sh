@@ -4,8 +4,13 @@ clients=("ptr" "retail" "beta")
 
 for client in ${clients[@]}
 do
-    echo "Copying to" $client
-    cp -Rv ./* "$wow_folder""_"$client"_/Interface/AddOns"
-    rm -v "$wow_folder""_"$client"_/Interface/AddOns/deploy.sh"
-    rm -v "$wow_folder""_"$client"_/Interface/AddOns/README.md"
+    if [ -d "$wow_folder""_"$client"_/Interface/AddOns" ]
+    then
+        echo "Copying to" $client
+        cp -Rv ./* "$wow_folder""_"$client"_/Interface/AddOns"
+        rm -v "$wow_folder""_"$client"_/Interface/AddOns/deploy.sh"
+        rm -v "$wow_folder""_"$client"_/Interface/AddOns/README.md"
+    else
+        echo "Skipping $client"
+    fi
 done
