@@ -7,4 +7,5 @@ do
     echo "Copying to" $client
     cp -Rv ./* "$wow_folder""_"$client"_/Interface/AddOns"
     rm -v "$wow_folder""_"$client"_/Interface/AddOns/deploy.sh"
+    rm -v "$wow_folder""_"$client"_/Interface/AddOns/README.md"
 done
