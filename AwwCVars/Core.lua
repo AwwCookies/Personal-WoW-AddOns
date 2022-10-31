@@ -1,11 +1,11 @@
 local f = CreateFrame("Frame")
 
 local cvars = {
-    ["SoftTargetInteract"] = "3",
-    ["SoftTargetEnemy"] = "3",
-    ["SoftTargetTooltipEnemy"] = "1",
-    ["SoftTargetInteractArc"] = "2",
-    ["SoftTargetInteractRange"] = "30",
+    ["SoftTargetInteract"] = "3", -- enable keypress interaction
+    ["SoftTargetEnemy"] = "3", -- enable action targeting
+    ["SoftTargetTooltipEnemy"] = "1", -- Enable tooltips on mobs no mouseover
+    ["SoftTargetInteractArc"] = "2", -- ?
+    ["SoftTargetInteractRange"] = "30", -- set interaction range (may be removed)
 }
 
 f:SetScript("OnEvent", function()
