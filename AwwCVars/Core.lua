@@ -1,5 +1,7 @@
 local f = CreateFrame("Frame")
 
+-- https://wowpedia.fandom.com/wiki/Patch_10.0.0/API_changes
+
 local cvars = {
     ["SoftTargetInteract"] = "3", -- enable keypress interaction
     ["SoftTargetEnemy"] = "3", -- enable action targeting
