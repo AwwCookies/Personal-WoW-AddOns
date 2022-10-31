@@ -18,7 +18,7 @@ local cvars = {
 
 f:SetScript("OnEvent", function()
     for name, value in pairs(cvars) do
-        print("Setting CVar", name, " to ", value)
+        print("Setting CVar", name, "to", value)
         SetCVar(name, value)
     end
 end)
