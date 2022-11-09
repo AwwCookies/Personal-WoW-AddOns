@@ -1,5 +1,6 @@
 local f = CreateFrame("Frame")
 
+
 hooksecurefunc(TargetFrame, "CheckClassification", function (self)
     local classification = UnitClassification(self.unit);
     local bossPortraitFrameTexture = self.TargetFrameContainer.BossPortraitFrameTexture;
@@ -22,11 +23,14 @@ hooksecurefunc(TargetFrame, "CheckClassification", function (self)
     self.TargetFrameContent.TargetFrameContentContextual.BossIcon:Hide();
 end);
 
+
+
 f:SetScript("OnUpdate", function (x) 
     local nameplates = C_NamePlate.GetNamePlates()
-
     for i, nameplate in ipairs(nameplates) do
-        if (nameplate.UnitFrame.ClassificationFrame) then
+        local classification = UnitClassification("target")
+       
+        if (classification == "rare" and nameplate.UnitFrame.ClassificationFrame) then
             local cframe = nameplate.UnitFrame.ClassificationFrame.classificationIndicator
             cframe:SetTexture([[interface/Addons/OldRareDragonArt/dragon.blp]]);
         end
