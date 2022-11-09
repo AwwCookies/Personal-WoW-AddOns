@@ -1,4 +1,5 @@
 #!/bin/bash
+dev_folder="/mnt/w/Dev Addons/"
 wow_folder="/mnt/w/World of Warcraft/"
 clients=("ptr" "retail" "beta")
 
@@ -7,7 +8,7 @@ do
     if [ -d "$wow_folder""_"$client"_/Interface/AddOns" ]
     then
         echo "Copying to" $client
-        cp -Rv ./* "$wow_folder""_"$client"_/Interface/AddOns"
+        cp -Rv $dev_addons* "$wow_folder""_"$client"_/Interface/AddOns"
         rm -v "$wow_folder""_"$client"_/Interface/AddOns/deploy.sh"
         rm -v "$wow_folder""_"$client"_/Interface/AddOns/README.md"
     else # folder doesn't exit

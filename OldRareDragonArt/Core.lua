@@ -33,6 +33,7 @@ f:SetScript("OnUpdate", function (x)
         if (classification == "rare" and nameplate.UnitFrame.ClassificationFrame) then
             local cframe = nameplate.UnitFrame.ClassificationFrame.classificationIndicator
             cframe:SetTexture([[interface/Addons/OldRareDragonArt/dragon.blp]]);
+            cframe:SetPoint("CENTER", -1, 0);
         end
     end
 end)
