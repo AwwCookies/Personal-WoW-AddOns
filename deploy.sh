@@ -10,7 +10,7 @@ do
         cp -Rv ./* "$wow_folder""_"$client"_/Interface/AddOns"
         rm -v "$wow_folder""_"$client"_/Interface/AddOns/deploy.sh"
         rm -v "$wow_folder""_"$client"_/Interface/AddOns/README.md"
-    else
+    else # folder doesn't exit
         echo "Skipping $client"
     fi
 done

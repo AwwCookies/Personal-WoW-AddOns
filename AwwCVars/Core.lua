@@ -5,6 +5,7 @@ local f = CreateFrame("Frame")
 local cvars = {
     ["SoftTargetInteract"] = "3", -- enable keypress interaction
     ["SoftTargetEnemy"] = "3", -- enable action targeting
+    ["SoftTargetTooltipInteract"] = "1", -- Show target tooltips
     ["SoftTargetTooltipEnemy"] = "1", -- Enable tooltips on mobs no mouseover
     ["SoftTargetTooltipFriend"] = "1", -- enable tool tips on friendly no mouseover
     ["SoftTargetInteractArc"] = "2", -- set yaw allowence to be anywhere in targeting area

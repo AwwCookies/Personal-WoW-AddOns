@@ -1,0 +1,7 @@
+## Interface: 100000
+## Title: Old Rare Dragon Art
+## Version: v1.0.0
+## Notes: Change Rare Dragon Art to the old style
+## Author: Aww
+
+Core.lua
